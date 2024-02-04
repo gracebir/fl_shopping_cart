@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'shoe_model.dart';
 
-class Cart {
+class Cart extends ChangeNotifier {
   // list of shoes for sale
   List<Shoe> shoeShop = [
     Shoe(
@@ -14,13 +16,12 @@ class Cart {
         price: "336",
         imagePath: "lib/images/sport-shoes.jpg",
         description:
-            "Female legs in stylish black jeans in white leather sneakers with snake pattern on the asphalt in the city."),
+            "Female legs in stylish black jeans in white leather sneakers."),
     Shoe(
         name: "Air max",
         price: "125",
         imagePath: "lib/images/airmax.jpg",
-        description:
-            "Creative minimal paper idea. Concept white shoe with white background."),
+        description: "Creative minimal paper idea. Concept white shoe."),
     Shoe(
         name: "All star",
         price: "100.0",
@@ -45,11 +46,13 @@ class Cart {
 
   void addItemToCart(Shoe shoe) {
     userCart.add(shoe);
+    notifyListeners();
   }
 
   // remove item from the cart
 
   void removeItemFromCart(Shoe shoe) {
     userCart.remove(shoe);
+    notifyListeners();
   }
 }
