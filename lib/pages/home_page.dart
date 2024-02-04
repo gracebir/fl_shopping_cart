@@ -82,11 +82,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                 ),
                 title: Text(
-                  "Ahout",
+                  "About",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
