@@ -1,6 +1,7 @@
 import 'package:fl_shopping_cart/models/shoe_model.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ShoeTile extends StatelessWidget {
   Shoe shoe;
   ShoeTile({super.key, required this.shoe});
