@@ -70,7 +70,13 @@ class ShopPage extends StatelessWidget {
                   return ShoeTile(
                     shoe: shoe,
                   );
-                }))
+                })),
+        const Padding(
+          padding: EdgeInsets.only(
+            top: 25,
+          ),
+          child: Divider(color: Colors.white),
+        )
       ],
     );
   }
