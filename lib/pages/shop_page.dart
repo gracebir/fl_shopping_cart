@@ -72,9 +72,7 @@ class ShopPage extends StatelessWidget {
                   );
                 })),
         const Padding(
-          padding: EdgeInsets.only(
-            top: 25,
-          ),
+          padding: EdgeInsets.only(top: 25, right: 25, left: 25),
           child: Divider(color: Colors.white),
         )
       ],
